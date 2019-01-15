@@ -1,0 +1,4 @@
+<!-- shows song in 'Artist Name - Song Title' format
+links to the artist -->
+<h1> This Song: </h1>
+<p><%= link_to @song.artist_name, artist_path(@song.artist) %> - <%= link_to @song.title, song_path(@song) %></p>
