@@ -1,0 +1,6 @@
+<!-- lists songs in 'Artist Name - Song Title' format
+links to the artist -->
+<h1>All Songs: </h1>
+<% @songs.each do |song| %>
+  <p><%= link_to("#{song.artist_name} - #{song.title}", song_path(song)) %></p>
+<% end %>
